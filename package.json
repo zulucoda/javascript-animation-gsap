@@ -1,0 +1,17 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "learning how to do animation is javascript using GSAP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "learning",
+    "animation",
+    "javascript",
+    "GSAP"
+  ],
+  "author": "Muzikayise Flynn Buthelezi (zulucoda)",
+  "license": "MIT"
+}
