@@ -36,7 +36,21 @@ body {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    display: flex;
+    flex-flow: row nowrap;
+}
 
+.content-holder > * {
+    flex: 1 100%;
+    padding: 10px;
+}
+
+.content-holder .time-line-buttons {
+    margin: 50px auto 0 auto;
+    height: 100px;
+    max-width: 800px;
+    text-align: center;
+    order: 1;
 }
 
 .content-holder .tools {
@@ -44,7 +58,8 @@ body {
     height: 100px;
     max-width: 800px;
     text-align: center;
-
+    flex: 5 0px;
+    order: 3;
 }
 
 .content-holder .tools img {
@@ -57,12 +72,14 @@ body {
     text-align: center;
     font-size: 280%;
     margin-top: 3%;
+    order: 3;
 }
 
 .content-holder .gsapTitle {
     width: 80%;
     margin: 5% auto 0 auto;
     max-height: 400px;
+    order: 4;
 }
 
 .gsapTitle .superman {
