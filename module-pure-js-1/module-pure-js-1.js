@@ -4,11 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function startTween() {
+    const delay = 1;
+
     const toolBoxEl = '#toolBox';
-    TweenLite.to(toolBoxEl, 1, {delay: 1, x: 290, y: 225, scale: 1.5, onComplete: returnToNormal, onCompleteParams: ['#toolBox'] });
+    TweenLite.to(toolBoxEl, 1, {delay: delay, x: 290, y: 225, scale: 1.5, onComplete: returnToNormal, onCompleteParams: ['#toolBox'] });
 
     const greenWord = document.getElementsByClassName('asapReg');
-    TweenLite.to(greenWord, 1, {color: '#ff0000', fontSize: '+=65', onComplete: returnTextToNormal});
+    TweenLite.to(greenWord, 1, {delay: (delay + 0.5), color: '#ff0000', fontSize: '+=65', onComplete: returnTextToNormal});
 }
 
 function returnToNormal(elementLabel) {
