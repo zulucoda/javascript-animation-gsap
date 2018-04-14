@@ -5,5 +5,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function startTween() {
     var toolBoxEl = document.getElementById('toolBox');
-    TweenLite.to(toolBoxEl, 1, {x: 290, y: 225, height: 200});
+    TweenLite.to(toolBoxEl, 1, {x: 290, y: 225, scale: 1.5});
 }
