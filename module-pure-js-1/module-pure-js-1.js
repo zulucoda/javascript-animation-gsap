@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function startTween() {
     const toolBoxEl = '#toolBox';
-    TweenLite.to(toolBoxEl, 1, {x: 290, y: 225, scale: 1.5, onComplete: returnToNormal, onCompleteParams: ['#toolBox'] });
+    TweenLite.to(toolBoxEl, 1, {delay: 1, x: 290, y: 225, scale: 1.5, onComplete: returnToNormal, onCompleteParams: ['#toolBox'] });
 
     const greenWord = document.getElementsByClassName('asapReg');
     TweenLite.to(greenWord, 1, {color: '#ff0000', fontSize: '+=65', onComplete: returnTextToNormal});
